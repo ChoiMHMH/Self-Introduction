@@ -1,0 +1,13 @@
+html,
+body {
+}
+body {
+  min-width: 320px;
+  /*폰트 설정하기*/
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
