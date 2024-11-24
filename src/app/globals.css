@@ -1,5 +1,31 @@
+:root {
+  /* 색상 변수 */
+  --base-violet-10: #f0f1ff;
+  --base-violet-20: #d1d1f7;
+  --base-violet-70: #3d2e7c;
+  --base-violet-90: #2b1c50;
+
+  /* 폰트 크기 */
+  --font-size-small: 12px;
+  --font-size-base: 16px;
+  --font-size-large: 20px;
+
+  /* 간격 */
+  --spacing-small: 8px;
+  --spacing-base: 16px;
+  --spacing-large: 24px;
+
+  /* 폰트 */
+  --font-family-base: "Pretendard", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
 html,
 body {
+  max-width: 100vw;
+  height: 100vh;
 }
 body {
   min-width: 320px;
@@ -10,4 +36,21 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+/* 스크롤바 스타일 (크롬/엣지) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--base-violet-70);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--base-violet-90);
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
