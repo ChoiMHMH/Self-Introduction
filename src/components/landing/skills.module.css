@@ -1,0 +1,105 @@
+.padding_container {
+  padding: 3rem;
+}
+.background {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: var(--base-violet-70);
+  padding: 5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: var(--text-light);
+}
+
+.skills_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 기본: 3열 */
+  gap: 1.5rem;
+}
+
+.section {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  border: 1px solid var(--border-color);
+  min-height: 180px;
+}
+
+.title {
+  color: white;
+}
+
+.section_title {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.section_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.section_list_item {
+  background-color: var(--base-violet-70);
+  color: var(--text-light);
+  padding: 0.4rem 1.2rem;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.typescript_color {
+  background-color: #2f74c0;
+}
+.javascript_color {
+  background-color: #efd81d;
+  color: var(--text-dark);
+}
+.java_color {
+  background-color: #c74141;
+}
+.next_color {
+  background-color: #000000;
+}
+.tailwind_color {
+  background-color: #38bdf8;
+}
+.zustand_color {
+  background-color: #f0ed40;
+  color: var(--text-dark);
+}
+.react_hook_form_color {
+  background-color: #cb37d8;
+}
+.react_query_color {
+  background-color: #143961;
+}
+.firebase_color {
+  background-color: #ffcd34;
+  color: var(--text-dark);
+}
+.aws_color {
+  background-color: #f79b26;
+}
+.vercel_color {
+  background-color: #010102;
+}
+@media (max-width: 768px) {
+  .skills_grid {
+    grid-template-columns: 1fr;
+  }
+}

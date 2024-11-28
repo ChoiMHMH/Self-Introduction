@@ -1,0 +1,35 @@
+.background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  color: var(--base-violet-20);
+  padding-top: 3rem;
+  text-align: center;
+}
+.description_container {
+  margin-top: 7rem;
+}
+.title {
+  letter-spacing: 4px;
+  font-size: 6.3rem;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 5.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 4.5rem;
+  }
+}

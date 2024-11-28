@@ -1,0 +1,60 @@
+.about_me {
+  padding: 55px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.profile_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 기본 3열 */
+  row-gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-left: 4.5rem;
+}
+
+.profile_item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.text {
+  text-align: left;
+}
+
+.label {
+  font-weight: bold;
+  color: #333;
+}
+
+.value {
+  font-size: 1.2rem;
+  color: #666;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 768px) {
+  .profile_container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 4rem;
+    padding-left: 7rem;
+  }
+  .profile_item {
+  }
+}
+
+@media (max-width: 480px) {
+  .profile_container {
+    grid-template-columns: 1fr;
+    width: 200px;
+    padding: 0;
+  }
+}

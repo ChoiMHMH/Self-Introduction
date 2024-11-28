@@ -1,0 +1,17 @@
+.down_button {
+  margin-top: 8rem;
+  cursor: pointer;
+}
+.bounce {
+  animation: bounce 1s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* 위로 10px 이동 */
+  }
+}

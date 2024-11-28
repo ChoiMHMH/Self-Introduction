@@ -1,0 +1,18 @@
+.project_item_container {
+  height: 100%;
+  background-color: var(--base-violet-20);
+  max-width: 1200px;
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  border-radius: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 기본 그림자 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* 부드러운 전환 */
+}
+
+.project_item_container:hover {
+  transform: scale(1.05); /* 살짝 확대 */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* 그림자 강화 */
+}

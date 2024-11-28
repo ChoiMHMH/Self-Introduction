@@ -1,0 +1,7 @@
+.wrapper {
+  background-color: var(--base-violet-90);
+  text-align: center;
+  padding: 4.2rem;
+  height: 10rem;
+  color: #f5f5f5;
+}
