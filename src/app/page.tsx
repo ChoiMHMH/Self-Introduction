@@ -5,7 +5,7 @@ import Skills from "@/components/landing/skills";
 import Projects from "@/components/landing/projects";
 import Footer from "@/components/landing/footer";
 import Header from "@/components/landing/header";
-import TopButton from "@/components/landing/top-button";
+import TopButton from "@/components/landing/top_button";
 import Background from "@/components/landing/background";
 
 export default function Home() {
