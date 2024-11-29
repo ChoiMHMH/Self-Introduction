@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: var(--font-family-base), sans-serif; /* 기본 폰트 설정 */
   min-width: 320px;
 }
@@ -47,12 +47,12 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--base-violet-70);
+  background: #2b1c50;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--base-violet-90);
+  background: #180f2c;
 }
 
 ::-webkit-scrollbar-track {
@@ -78,4 +78,22 @@ a {
 
 .font_yang {
   font-family: "양진체", Pretendard;
+}
+
+.title {
+  font-family: "양진체", Pretendard;
+  letter-spacing: 4px;
+  font-size: 6.3rem;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 5.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 4.5rem;
+  }
 }

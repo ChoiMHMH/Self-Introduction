@@ -19,16 +19,20 @@ function AboutMe() {
         </div>
         <div className={styles.profile_item}>
           <div className={styles.icon}>
-            <Image
-              src="/calender.svg"
-              alt="달력 아이콘"
-              width={32}
-              height={32}
-            />
+            <Image src="/github.svg" alt="달력 아이콘" width={32} height={32} />
           </div>
           <div className={styles.text}>
-            <div className={styles.label}>생년월일</div>
-            <div className={styles.value}>98.05.20</div>
+            <div className={styles.label}>github</div>
+            <div className={styles.value}>
+              <a
+                className={styles.github_link}
+                href="https://github.com/ChoiMHMH"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github.com/ChoiMHMH
+              </a>
+            </div>
           </div>
         </div>
         <div className={styles.profile_item}>
@@ -71,14 +75,14 @@ function AboutMe() {
         <div className={styles.profile_item}>
           <div className={styles.icon}>
             <Image
-              src="/github.svg"
+              src="/education.svg"
               alt="사용자 아이콘"
               width={32}
               height={32}
             />
           </div>
           <div className={styles.text}>
-            <div className={styles.label}>github</div>
+            <div className={styles.label}>학력</div>
             <div className={styles.value}>
               연성대학교
               <br />

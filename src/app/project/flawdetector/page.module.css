@@ -1,0 +1,9 @@
+.background {
+  padding: 4rem;
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  background-color: var(--base-violet-70);
+}

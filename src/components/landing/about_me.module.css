@@ -36,9 +36,17 @@
 }
 
 .value {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #666;
   white-space: pre-wrap;
+}
+
+.github_link {
+  color: #258ddb;
+}
+
+.github_link:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {

@@ -1,25 +1,20 @@
+import Footer from "@/components/landing/footer";
+import Modal from "@/components/projects/modal";
 import type { Metadata } from "next";
-import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "최민혁 포트폴리오",
+  title: "project",
   description: "최민혁 포트폴리오 입니다.",
 };
 
 export default function RootLayout({
   children,
-  modal,
 }: Readonly<{
   children: React.ReactNode;
-  modal: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
-      <body>
-        <div id="modal_root" />
-        {children}
-        {modal}
-      </body>
-    </html>
+    <>
+      <Modal>{children}</Modal>
+    </>
   );
 }

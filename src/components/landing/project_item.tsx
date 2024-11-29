@@ -4,23 +4,45 @@ import Image from "next/image";
 
 type ProjectItemProps = {
   title?: string;
-  description?: string;
+  detailTitle?: string;
+  detailDescription?: string[];
   image?: string;
+  url?: string;
+  skills?: string;
+  date?: string;
 };
 
-function ProjectItem({ title, description, image }: ProjectItemProps) {
+function ProjectItem({
+  date,
+  title,
+  detailTitle,
+  detailDescription,
+  image,
+  url,
+  skills,
+}: ProjectItemProps) {
   return (
-    <Link href={`/project/${title}`}>
+    <Link href={`/project/${url}`}>
       <div className={styles.project_item_container}>
-        <div className={styles.description_container}>
-          <div>{title}</div>
-          <div>{description}</div>
+        <div className={styles.text_container}>
+          <div className={styles.title}>{title}</div>
+          <div className={styles.project_details_container}>
+            <div className={styles.project_details_title}>{detailTitle}</div>
+            <ul className={styles.project_details_description}>
+              {detailDescription?.map((data) => (
+                <li key={data}>{data}</li>
+              ))}
+            </ul>
+            <div className={styles.project_skills}>{skills}</div>
+            <div className={styles.project_date}>{date}</div>
+          </div>
         </div>
         <Image
-          src="/github.svg"
+          className={styles.image}
+          src={image ? image : "/github.svg"}
           alt={image || "임시이미지"}
-          width={450}
-          height={450}
+          width={400}
+          height={400}
         />
       </div>
     </Link>
