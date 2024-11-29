@@ -1,0 +1,21 @@
+.modal {
+  height: 85%;
+  width: 88%;
+
+  background: var(--base-violet-70);
+  border-radius: 5rem;
+  border: none;
+  margin: 50px auto;
+  color: var(--text-light);
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.close_button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}

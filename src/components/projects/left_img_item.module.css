@@ -1,0 +1,93 @@
+/* 전체 섹션 스타일 */
+.section_container {
+  min-width: 380px;
+  padding: 8rem;
+  text-align: center;
+  background-color: var(--base-violet-70); /* 배경색 */
+  color: #fff; /* 텍스트 색상 */
+}
+
+.card {
+  position: relative;
+  border-radius: 12px;
+  right: 20px;
+  padding: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.image_placeholder {
+  position: relative;
+  left: 40px;
+  width: 400px;
+  height: 400px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* 텍스트 컨테이너 */
+.text_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 4rem 4rem 6rem;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  text-align: left;
+  background-color: var(--base-violet-90);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.card_title {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.card_description {
+  font-size: 1.4rem;
+  color: #cfcfcf;
+}
+
+/* 반응형 설정 */
+@media (max-width: 880px) {
+  .card {
+    flex-direction: column; /* 사진 위, 텍스트 아래 */
+    text-align: center;
+    position: initial;
+  }
+
+  .image_placeholder {
+    width: 430px;
+    height: 430px;
+    position: initial;
+    margin-bottom: 20px;
+  }
+
+  .text_container {
+    position: relative;
+    bottom: 40px;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+    width: 430px;
+    height: auto; /* 높이 조정 */
+  }
+
+  .card_description {
+    margin-top: 10px; /* 텍스트 간격 조정 */
+  }
+}
+@media (max-width: 570px) {
+  .image_placeholder {
+    width: 300px;
+    height: 300px;
+  }
+  .text_container {
+    width: 300px;
+  }
+}
