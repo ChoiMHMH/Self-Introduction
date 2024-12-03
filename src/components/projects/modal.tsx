@@ -42,8 +42,8 @@ function Modal({ children }: { children: ReactNode }) {
         }}
         className={styles.close_button}
         src="/x.svg"
-        width={20}
-        height={20}
+        width={30}
+        height={30}
         alt="close icon"
       />
     </dialog>,

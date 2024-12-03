@@ -1,4 +1,3 @@
-import Footer from "@/components/landing/footer";
 import Modal from "@/components/projects/modal";
 import type { Metadata } from "next";
 

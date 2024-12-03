@@ -1,4 +1,6 @@
+import Mogazoa from "@/app/project/mogazoa/page";
+
 function Page() {
-  return <div>Page</div>;
+  return <Mogazoa />;
 }
 export default Page;

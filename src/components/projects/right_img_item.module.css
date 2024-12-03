@@ -18,11 +18,12 @@
 }
 
 .image_placeholder {
+  object-fit: contain;
   position: relative;
   right: 40px;
   width: 400px;
   height: 400px;
-  background-color: #ffffff;
+  background-color: #000;
   border-radius: 20px;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.7);
 }
@@ -33,9 +34,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 4rem 4rem 4rem 6rem;
-  width: 300px;
-  height: 300px;
+  padding: 2rem 5rem 2rem 3rem;
+  width: 350px;
+  height: 350px;
   border-radius: 20px;
   text-align: left;
   background-color: var(--base-violet-90);
@@ -55,8 +56,13 @@
 /* 반응형 설정 */
 @media (max-width: 880px) {
   .card {
+    padding: 2rem;
     position: initial;
     flex-direction: column; /* 사진 위, 텍스트 아래 */
+    text-align: center;
+  }
+
+  .card_title {
     text-align: center;
   }
 
@@ -72,12 +78,12 @@
     bottom: 20px;
     padding: 2rem;
     align-items: center;
-    text-align: center;
     width: 430px;
     height: auto; /* 높이 조정 */
   }
 
   .card_description {
+    padding-left: 3rem;
     margin-top: 10px; /* 텍스트 간격 조정 */
   }
 }

@@ -1,4 +1,6 @@
+import Portfolio from "@/app/project/portfolio/page";
+
 function Page() {
-  return <div>포트폴리오 인터셉트Page</div>;
+  return <Portfolio />;
 }
 export default Page;

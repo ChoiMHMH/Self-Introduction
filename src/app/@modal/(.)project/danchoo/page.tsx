@@ -1,4 +1,6 @@
+import Danchoo from "@/app/project/danchoo/page";
+
 function Page() {
-  return <div>Page</div>;
+  return <Danchoo />;
 }
 export default Page;

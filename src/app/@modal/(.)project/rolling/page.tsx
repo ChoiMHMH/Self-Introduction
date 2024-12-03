@@ -1,4 +1,6 @@
+import RollingPaper from "@/app/project/rolling/page";
+
 function Page() {
-  return <div>Page</div>;
+  return <RollingPaper />;
 }
 export default Page;

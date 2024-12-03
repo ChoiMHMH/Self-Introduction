@@ -66,7 +66,7 @@ function Projects() {
             "반응형 UI와 협업 경험",
           ]}
           date="2024.03 (5人 팀 프로젝트)"
-          skills="JavaScript, React, Styled Components, Vercel, Axios"
+          skills="JavaScript, React, Styled Components, Netlify, Axios"
         />
       </div>
     </section>
