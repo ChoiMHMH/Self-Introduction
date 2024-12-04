@@ -1,3 +1,4 @@
+"use client";
 const handleScroll = (targetId: string) => {
   const target = document.querySelector(`#${targetId}`);
 

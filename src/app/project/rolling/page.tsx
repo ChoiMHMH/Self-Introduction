@@ -13,11 +13,11 @@ function RollingPaper() {
         cardDescription={["", "", ""]}
         cardImage="/github.svg"
       ></LeftImgItem>
-      <LeftImgItem
+      <RightImgItem
         cardTitle="반응형 설정 및 CSS-in-js 경험"
         cardDescription={["", "", ""]}
         cardImage="/github.svg"
-      ></LeftImgItem>
+      ></RightImgItem>
     </ProjectContainer>
   );
 }

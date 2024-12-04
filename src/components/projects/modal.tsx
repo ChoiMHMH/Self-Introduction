@@ -10,25 +10,31 @@ function Modal({ children }: { children: ReactNode }) {
   const router = useRouter();
 
   useEffect(() => {
-    document.body.style.overflow = "hidden";
+    if (typeof window !== "undefined") {
+      document.body.style.overflow = "hidden";
 
-    if (!dialogRef.current?.open) {
-      dialogRef.current?.showModal();
-      dialogRef.current?.scrollTo({
-        top: 0,
-      });
+      if (dialogRef.current && !dialogRef.current.open) {
+        dialogRef.current.showModal();
+        dialogRef.current.scrollTo({
+          top: 0,
+        });
+      }
+
+      return () => {
+        document.body.style.overflow = "";
+      };
     }
-
-    return () => {
-      document.body.style.overflow = "";
-    };
   }, []);
+
+  if (typeof window === "undefined") {
+    return null;
+  }
 
   return createPortal(
     <dialog
       onClose={() => router.back()}
       onClick={(e) => {
-        if ((e.target as any).nodeName === "DIALOG") {
+        if ((e.target as HTMLElement).nodeName === "DIALOG") {
           router.back();
         }
       }}
@@ -50,4 +56,5 @@ function Modal({ children }: { children: ReactNode }) {
     document.getElementById("modal_root") as HTMLElement
   );
 }
+
 export default Modal;

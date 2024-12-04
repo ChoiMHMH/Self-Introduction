@@ -13,11 +13,11 @@ function Mogazoa() {
         cardDescription={["학습 목적으로 사용", ""]}
         cardImage="/github.svg"
       ></LeftImgItem>
-      <LeftImgItem
+      <RightImgItem
         cardTitle="SEO 설정"
         cardDescription={["1", "", "", ""]}
         cardImage="/github.svg"
-      ></LeftImgItem>
+      ></RightImgItem>
     </ProjectContainer>
   );
 }

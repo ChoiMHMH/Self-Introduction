@@ -14,11 +14,11 @@ function Portfolio() {
         ]}
         cardImage="/portfolio.png"
       ></LeftImgItem>
-      <LeftImgItem
+      <RightImgItem
         cardTitle="SEO 설정"
         cardDescription={["1", "", "", ""]}
         cardImage="/github.svg"
-      ></LeftImgItem>
+      ></RightImgItem>
     </ProjectContainer>
   );
 }

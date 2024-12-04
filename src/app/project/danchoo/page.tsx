@@ -17,11 +17,11 @@ function Danchoo() {
         ]}
         cardImage="/github.svg"
       ></LeftImgItem>
-      <LeftImgItem
+      <RightImgItem
         cardTitle="SEO 설정"
         cardDescription={["1", "", "", ""]}
         cardImage="/github.svg"
-      ></LeftImgItem>
+      ></RightImgItem>
     </ProjectContainer>
   );
 }
