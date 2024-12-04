@@ -53,13 +53,54 @@
   color: #cfcfcf;
 }
 
+.image_placeholder {
+  transition: opacity 0.3s ease;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.image_skeleton {
+  position: absolute;
+  right: 80px;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(
+    90deg,
+    rgba(240, 240, 240, 1) 25%,
+    rgba(220, 220, 220, 1) 50%,
+    rgba(240, 240, 240, 1) 75%
+  );
+  background-size: 300% 100%; /* 더 부드럽게 움직이도록 설정 */
+  animation: shimmer 1.2s ease-in-out infinite;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 살짝 떠 보이는 효과 */
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -150% 0;
+  }
+  100% {
+    background-position: 150% 0;
+  }
+}
+
 /* 반응형 설정 */
 @media (max-width: 880px) {
   .card {
     padding: 2rem;
-    position: initial;
+    left: 0;
     flex-direction: column; /* 사진 위, 텍스트 아래 */
     text-align: center;
+  }
+
+  .image_skeleton {
+    right: 20px;
+    width: 430px;
+    height: 430px;
   }
 
   .card_title {
@@ -69,7 +110,6 @@
   .image_placeholder {
     width: 430px;
     height: 430px;
-    position: initial;
     margin-bottom: 20px;
   }
 
@@ -89,6 +129,7 @@
 }
 
 @media (max-width: 570px) {
+  .image_skeleton,
   .image_placeholder {
     width: 300px;
     height: 300px;
