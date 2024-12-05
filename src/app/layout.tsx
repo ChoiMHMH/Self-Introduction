@@ -21,6 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="yNsABsjfQqsN429xs02JqHLfNy-FCj6u8I8kIL0-znc"
+        />
+      </head>
       <body>
         <NextTopLoader color="#9e24e6" />
         <div id="modal_root" />
