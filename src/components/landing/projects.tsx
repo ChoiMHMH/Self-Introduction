@@ -49,9 +49,8 @@ function Projects() {
           url="danchoo"
           image="/danchoo.png"
           detailDescription={[
-            "figma 디자인 파일과 Swagger를 제공받아 제작",
-            "코드 리뷰 문화 Pn rule를 반영하여 개발자와 협업 경험",
-            "반응형 UI",
+            "협업 경험과 Next.js, Tailwind 학습을 위한 프로젝트",
+            "코드 리뷰 문화 Pn rule를 반영하여 개발 문화 경험",
           ]}
           date="2024.04 (5人 팀 프로젝트)"
           skills="TypeScript, Next.js, Tailwind CSS, Vercel, Axios"
@@ -62,7 +61,7 @@ function Projects() {
           url="rolling"
           image="/rolling.png"
           detailDescription={[
-            "context를 활용한 dark, light모드 개발 ",
+            "Css-in-js와 react학습을 위한 프로젝트",
             "반응형 UI와 협업 경험",
           ]}
           date="2024.03 (5人 팀 프로젝트)"

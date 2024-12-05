@@ -1,10 +1,15 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import NextTopLoader from "nextjs-toploader";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "최민혁 포트폴리오",
   description: "최민혁 포트폴리오 입니다.",
+  openGraph: {
+    title: "최민혁 포트폴리오",
+    description: "최민혁 포트폴리오 입니다.",
+    images: ["/portfolio.png"],
+  },
 };
 
 export default function RootLayout({

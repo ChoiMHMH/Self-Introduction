@@ -11,13 +11,15 @@
   position: relative;
   left: 20px;
   border-radius: 12px;
-  padding: 4rem;
+  padding: 2rem;
   display: flex;
   flex-direction: row-reverse; /* 사진을 오른쪽으로 */
   align-items: center;
 }
 
 .image_placeholder {
+  cursor: pointer;
+  border: 8px solid var(--base-violet-90);
   object-fit: contain;
   position: relative;
   right: 40px;
@@ -44,6 +46,8 @@
 }
 
 .card_title {
+  width: 100%;
+  text-align: center;
   font-size: 1.6rem;
   margin-bottom: 10px;
 }
@@ -92,6 +96,7 @@
 @media (max-width: 880px) {
   .card {
     padding: 2rem;
+    padding-bottom: 0;
     left: 0;
     flex-direction: column; /* 사진 위, 텍스트 아래 */
     text-align: center;
@@ -108,6 +113,7 @@
   }
 
   .image_placeholder {
+    left: 0px;
     width: 430px;
     height: 430px;
     margin-bottom: 20px;

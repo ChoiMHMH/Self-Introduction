@@ -2,7 +2,17 @@ import LeftImgItem from "@/components/projects/left_img_item";
 import RightImgItem from "@/components/projects/right_img_item";
 import ProjectContainer from "@/components/projects/project_container";
 import styles from "../page.module.css";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "최민혁 포트폴리오 - 플로디텍터",
+  description: "최민혁 포트폴리오 입니다.",
+  openGraph: {
+    title: "최민혁 포트폴리오 - 플로디텍터",
+    description: "최민혁 포트폴리오 입니다.",
+    images: ["/portfolio.png"],
+  },
+};
 function FlawDetector() {
   return (
     <ProjectContainer

@@ -1,0 +1,36 @@
+/* modal.module.css */
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal_content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal_image {
+  max-width: 100%;
+  max-height: auto;
+  border-radius: 10px;
+}
+
+.close_button {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}

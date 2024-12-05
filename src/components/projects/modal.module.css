@@ -1,8 +1,9 @@
 .modal {
   height: 85%;
   width: 88%;
+  max-width: 1100px;
 
-  background: var(--base-violet-70);
+  background: var(--base-violet-20);
   border-radius: 5rem;
   border: none;
   margin: 50px auto;

@@ -11,7 +11,7 @@
   position: relative;
   border-radius: 12px;
   right: 20px;
-  padding: 4rem;
+  padding: 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -19,6 +19,8 @@
 }
 
 .image_placeholder {
+  cursor: pointer;
+  border: 8px solid var(--base-violet-90);
   object-fit: contain;
   position: relative;
   left: 40px;
@@ -45,6 +47,7 @@
 }
 
 .card_title {
+  width: 100%;
   text-align: center;
   font-size: 1.6rem;
   margin-bottom: 10px;
@@ -94,7 +97,9 @@
 @media (max-width: 880px) {
   .card {
     right: 0;
+    gap: 0;
     padding: 2rem;
+    padding-bottom: 0;
     flex-direction: column; /* 사진 위, 텍스트 아래 */
     text-align: center;
   }
@@ -113,7 +118,7 @@
 
   .text_container {
     position: relative;
-    bottom: 40px;
+    bottom: 20px;
     padding: 2rem;
     align-items: center;
     width: 430px;
