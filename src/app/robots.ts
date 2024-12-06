@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://self-introduction-umber-six.vercel.app/sitemap.xml",
-    host: "https://self-introduction-umber-six.vercel.app",
+    sitemap: "https://cmh-portfolio.vercel.app/sitemap.xml",
+    host: "https://cmh-portfolio.vercel.app",
   };
 }
