@@ -31,6 +31,11 @@ export default function RootLayout({
           name="google-site-verification"
           content="yNsABsjfQqsN429xs02JqHLfNy-FCj6u8I8kIL0-znc"
         />
+        <meta
+          name="naver-site-verification"
+          content="950d1e5989a1aaebf11e3456bd18a132b8cf8f47"
+        />
+        <link rel="icon" href="./icon.svg" />
       </head>
       <body>
         <NextTopLoader color="#9e24e6" />

@@ -27,7 +27,11 @@ function Portfolio() {
       ></LeftImgItem>
       <RightImgItem
         cardTitle="SEO 설정"
-        cardDescription={["1", "", "", ""]}
+        cardDescription={[
+          "메타태그 설정",
+          "구글 검색엔진 등록",
+          "네이버 검색엔진 등록",
+        ]}
         cardImage="/github.svg"
       ></RightImgItem>
     </ProjectContainer>
