@@ -24,7 +24,7 @@ function Projects() {
           detailTitle="포트폴리오 웹사이트"
           url="portfolio"
           date="2024.11 (1人 개인 프로젝트)"
-          image="/portpolio.png"
+          image="/portfolio_landing.png"
           detailDescription={[
             "나만의 포트폴리오를 위한 웹 사이트 개발",
             "Intercept, Parrallel Routes로 모달 구현",

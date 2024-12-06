@@ -11,7 +11,7 @@ function DoubleDownButton() {
     <Image
       className={`${style.down_button} ${style.bounce}`}
       src={"/double-arrow.svg"}
-      alt="더블다운버튼"
+      alt="더 알아보기"
       width={32}
       height={32}
       onClick={onClick}
