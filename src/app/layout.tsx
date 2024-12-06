@@ -35,7 +35,11 @@ export default function RootLayout({
           name="naver-site-verification"
           content="950d1e5989a1aaebf11e3456bd18a132b8cf8f47"
         />
-        <link rel="icon" href="/icon.svg" />
+        <meta
+          name="keywords"
+          content="최민혁, CMH, 포트폴리오, Portfolio, 개발자"
+        />
+        <link rel="icon" href="./icon.svg" />
       </head>
       <body>
         <NextTopLoader color="#9e24e6" />

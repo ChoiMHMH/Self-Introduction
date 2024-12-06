@@ -38,15 +38,15 @@ function AboutMe() {
         <div className={styles.profile_item}>
           <div className={styles.icon}>
             <Image
-              src="/location.svg"
+              src="/calender.svg"
               alt="사용자 아이콘"
               width={32}
               height={32}
             />
           </div>
           <div className={styles.text}>
-            <div className={styles.label}>위치</div>
-            <div className={styles.value}>경기도 안산시</div>
+            <div className={styles.label}>생년월일</div>
+            <div className={styles.value}>98.05.20</div>
           </div>
         </div>
         <div className={styles.profile_item}>
