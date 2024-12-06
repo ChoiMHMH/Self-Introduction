@@ -6,11 +6,14 @@ export const metadata: Metadata = {
   title: "최민혁 | 포트폴리오",
   description:
     "최민혁 프론트엔드 개발자 포트폴리오. 핵심을 놓치지 않는 개발자 최민혁입니다.",
+  icons: {
+    icon: "icon.svg",
+  },
   openGraph: {
     title: "최민혁 | 포트폴리오",
     description:
       "최민혁 프론트엔드 개발자 포트폴리오. 핵심을 놓치지 않는 개발자 최민혁입니다.",
-    images: ["/portfolio_landing.png"],
+    images: ["/thumbnail.png"],
   },
 };
 
