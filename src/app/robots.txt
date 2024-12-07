@@ -1,6 +1,0 @@
-User-Agent: *
-Allow: /
-Disallow: /private/
-
-Host: https://cmh-portfolio.vercel.app
-Sitemap: https://cmh-portfolio.vercel.app/sitemap.xml
