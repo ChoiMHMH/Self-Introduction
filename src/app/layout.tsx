@@ -7,9 +7,17 @@ export const metadata: Metadata = {
   description:
     "최민혁 프론트엔드 개발자 포트폴리오. 핵심을 놓치지 않는 개발자 최민혁입니다.",
   icons: {
-    icon: "icon.svg",
+    icon: "/icon.svg",
   },
   openGraph: {
+    title: "최민혁 | 포트폴리오",
+    description:
+      "최민혁 프론트엔드 개발자 포트폴리오. 핵심을 놓치지 않는 개발자 최민혁입니다.",
+    images: ["/thumbnail.png"],
+    siteName: "최민혁 | 포트폴리오",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "최민혁 | 포트폴리오",
     description:
       "최민혁 프론트엔드 개발자 포트폴리오. 핵심을 놓치지 않는 개발자 최민혁입니다.",
@@ -39,7 +47,7 @@ export default function RootLayout({
           name="keywords"
           content="최민혁, CMH, 포트폴리오, Portfolio, 개발자"
         />
-        <link rel="icon" href="./icon.svg" />
+        <link rel="icon" href="/icon.svg" />
       </head>
       <body>
         <NextTopLoader color="#9e24e6" />
