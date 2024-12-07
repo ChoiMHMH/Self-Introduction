@@ -10,3 +10,10 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: "https://cmh-portfolio.vercel.app/sitemap.xml",
   };
 }
+/*
+User-Agent: *
+Allow: /
+Disallow: /private/
+
+Sitemap: https://cmh-portfolio.vercel.app/sitemap.xml
+*/

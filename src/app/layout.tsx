@@ -36,6 +36,18 @@ export const metadata: Metadata = {
       "최민혁 프론트엔드 개발자 포트폴리오. 핵심을 놓치지 않는 개발자 최민혁입니다.",
     images: ["/thumbnail.png"],
   },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      "max-image-preview": "large",
+      "max-snippet": 70,
+    },
+  },
 };
 
 export default function RootLayout({
