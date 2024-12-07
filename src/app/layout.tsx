@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   verification: {
     google: "yNsABsjfQqsN429xs02JqHLfNy-FCj6u8I8kIL0-znc",
     other: {
-      "naver-site-verification": "950d1e5989a1aaebf11e3456bd18a132b8cf8f47",
+      "naver-site-verification": "dd319ece8006f1c7ef4f7119816700d07da25477",
     },
   },
   title: "최민혁 포트폴리오",
