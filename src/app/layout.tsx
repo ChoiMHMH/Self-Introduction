@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
   title: "최민혁 포트폴리오",
   description:
-    "최민혁 프론트엔드 개발자 포트폴리오. 핵심을 놓치지 않는 개발자 최민혁입니다.",
+    "프론트엔드 개발자 포트폴리오. 핵심을 놓치지 않는 개발자 최민혁입니다.",
   icons: {
     icon: [
       {
@@ -20,20 +20,29 @@ export const metadata: Metadata = {
       },
     ],
   },
-  keywords: ["최민혁 포트폴리오", "프론트엔드 개발자"],
-  applicationName: "최민혁 포트폴리오",
+  keywords: [
+    "최민혁",
+    "최민혁 포트폴리오",
+    "프론트엔드 개발자",
+    "Portfolio",
+    "개발자",
+    "포트폴리오",
+  ],
+  applicationName: "최민혁 포트폴리오 - 프론트엔드 개발자",
+  creator: "최민혁",
+  publisher: "최민혁",
   openGraph: {
-    title: "최민혁 | 포트폴리오",
+    title: "최민혁 포트폴리오",
     description:
-      "최민혁 프론트엔드 개발자 포트폴리오. 핵심을 놓치지 않는 개발자 최민혁입니다.",
+      "프론트엔드 개발자 포트폴리오. 핵심을 놓치지 않는 개발자 최민혁입니다.",
     images: ["/thumbnail.png"],
-    siteName: "최민혁 | 포트폴리오",
+    siteName: "최민혁 포트폴리오",
   },
   twitter: {
     card: "summary_large_image",
-    title: "최민혁 | 포트폴리오",
+    title: "최민혁 포트폴리오",
     description:
-      "최민혁 프론트엔드 개발자 포트폴리오. 핵심을 놓치지 않는 개발자 최민혁입니다.",
+      "프론트엔드 개발자 포트폴리오. 핵심을 놓치지 않는 개발자 최민혁입니다.",
     images: ["/thumbnail.png"],
   },
   robots: {
@@ -42,10 +51,10 @@ export const metadata: Metadata = {
     nocache: false,
     googleBot: {
       index: true,
-      follow: false,
+      follow: true,
       noimageindex: true,
       "max-image-preview": "large",
-      "max-snippet": 70,
+      "max-snippet": 60,
     },
   },
 };
@@ -59,6 +68,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <head>
+        <meta
+          name="application-name"
+          content="최민혁 포트폴리오 - 프론트엔드 개발자"
+        />
+      </head>
       <body>
         <NextTopLoader color="#9e24e6" />
         <div id="modal_root" />
