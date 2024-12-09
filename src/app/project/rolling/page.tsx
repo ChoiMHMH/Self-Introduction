@@ -32,9 +32,9 @@ function RollingPaper() {
         cardDescription={[
           "웹 접근성: 시맨틱 태그, 이미지 태그 대체 텍스트 활용",
           "github를 활용한 협업 경험",
-          "eslint와 prettier 설정",
+          "카카오톡 공유하기 기능",
         ]}
-        cardImage="/github.svg"
+        cardImage="/rolling_kakao.png"
       ></LeftImgItem>
       <RightImgItem
         cardTitle="반응형 설정 및 CSS-in-js 경험"
