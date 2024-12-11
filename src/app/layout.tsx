@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   verification: {
-    google: "yNsABsjfQqsN429xs02JqHLfNy-FCj6u8I8kIL0-znc",
+    google: "",
     other: {
       "naver-site-verification": "dd319ece8006f1c7ef4f7119816700d07da25477",
     },
