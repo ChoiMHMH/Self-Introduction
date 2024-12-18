@@ -22,13 +22,13 @@ export const metadata: Metadata = {
   },
   keywords: [
     "최민혁",
-    "최민혁 포트폴리오",
-    "프론트엔드 개발자",
-    "Portfolio",
-    "개발자",
     "포트폴리오",
+    "최민혁 포트폴리오",
+    "Portfolio",
+    "프론트엔드 개발자",
+    "개발자",
   ],
-  applicationName: "최민혁 포트폴리오 - 프론트엔드 개발자",
+  applicationName: "최민혁 포트폴리오",
   creator: "최민혁",
   publisher: "최민혁",
   openGraph: {
@@ -69,10 +69,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
-        <meta
-          name="application-name"
-          content="최민혁 포트폴리오 - 프론트엔드 개발자"
-        />
+        <meta name="application-name" content="최민혁 포트폴리오" />
       </head>
       <body>
         <NextTopLoader color="#9e24e6" />

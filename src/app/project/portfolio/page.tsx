@@ -26,13 +26,13 @@ function Portfolio() {
         cardImage="/portfolio.png"
       ></LeftImgItem>
       <RightImgItem
-        cardTitle="SEO 설정"
+        cardTitle="기본적인 SEO 설정"
         cardDescription={[
           "메타태그 설정",
           "구글 검색엔진 등록",
           "네이버 검색엔진 등록",
         ]}
-        cardImage="/github.svg"
+        cardImage="/seo.png"
       ></RightImgItem>
     </ProjectContainer>
   );

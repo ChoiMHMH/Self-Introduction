@@ -1,6 +1,7 @@
 import LeftImgItem from "@/components/projects/left_img_item";
 
 import ProjectContainer from "@/components/projects/project_container";
+import RightImgItem from "@/components/projects/right_img_item";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -27,6 +28,14 @@ function Danchoo() {
         ]}
         cardImage="/danchoo_lint.png"
       ></LeftImgItem>
+      <RightImgItem
+        cardTitle="tailwind CSS"
+        cardDescription={[
+          "빠른 개발에 맞을 것 같다고 생각하여 tailwind 사용",
+          "mobile first의 반응형",
+        ]}
+        cardImage="/danchoo.png"
+      ></RightImgItem>
     </ProjectContainer>
   );
 }

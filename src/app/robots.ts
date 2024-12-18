@@ -5,14 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
+      disallow: "/private/",
     },
     sitemap: "https://cmh-portfolio.vercel.app/sitemap.xml",
   };
 }
-/*
-User-Agent: *
-Allow: /
-Disallow: /private/
-
-Sitemap: https://cmh-portfolio.vercel.app/sitemap.xml
-*/
