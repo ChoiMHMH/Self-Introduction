@@ -17,7 +17,7 @@ function FlawDetector() {
   return (
     <ProjectContainer
       title="플로디텍터"
-      subtitle="플로디텍터는 Llama 3 기반의 LLM API를 활용하여 코드를 분석하고, 취약점 관련 기사를 크롤링 및 번역하여 제공하는 플랫폼입니다. "
+      subtitle="플로디텍터는 Llama 3 기반의 LLM API를 활용하여 코드를 분석하고, 취약점 관련 기사를 크롤링 및 번역하여 제공하는 플랫폼입니다. 제가 개발 한 부분은 아래와 같습니다. "
     >
       <a
         className={styles.link}
@@ -60,9 +60,10 @@ function FlawDetector() {
       <RightImgItem
         cardTitle="취약점 기사 페이지 (검색, 찜, 페이지네이션)"
         cardDescription={[
-          "firebase 읽기 요청을 최소화하여 요금 절감을 목적으로 개발",
-          "클라이언트에서 로직 처리와 파이어스토어 쿼리 중 고민",
-          "부끄럽지만 firebase의 쿼리 성능이 생각보다 뛰어나서 별다른 성과는 거두지 못함",
+          "Firebase 읽기 요청을 최소화하여 요금 절감을 목적으로 개발",
+          "클라이언트 로직 처리와 Firestore 쿼리 사용 사이에서 고민.",
+          "Firestore의 뛰어난 쿼리 성능으로 인해 클라이언트에서만 로직을 처리하는 방식이 요청 감소에 큰 효과가 없었다.",
+          "결국 Firebase 쿼리와 클라이언트 로직을 적절히 분배하는 방향으로 정리.",
         ]}
         cardImage="/gif/vulnerability.gif"
       ></RightImgItem>
