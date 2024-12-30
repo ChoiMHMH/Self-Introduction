@@ -10,6 +10,13 @@ interface ImageModalProps {
 
 function ImageModal({ imageSrc, onClose }: ImageModalProps) {
   useEffect(() => {
+    const modalRoot = document.getElementById("modal_root");
+    const dialogElement = modalRoot?.querySelector("dialog");
+
+    if (dialogElement) {
+      dialogElement.style.overflow = "hidden";
+    }
+
     // ESC 키를 감지하여 모달 닫기
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
@@ -17,11 +24,14 @@ function ImageModal({ imageSrc, onClose }: ImageModalProps) {
       }
     };
 
-    // keydown 이벤트 등록
     window.addEventListener("keydown", handleKeyDown);
+
     return () => {
-      // 이벤트 클린업
       window.removeEventListener("keydown", handleKeyDown);
+
+      if (dialogElement) {
+        dialogElement.style.overflow = "";
+      }
     };
   }, [onClose]);
 
