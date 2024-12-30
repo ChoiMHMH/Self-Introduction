@@ -5,3 +5,22 @@
 .link:hover {
   text-decoration: underline;
 }
+.header_container {
+  height: 5rem;
+  background-color: var(--base-violet-90);
+  padding: 12px;
+  padding-left: 30px;
+}
+.header_home_button {
+  border: none;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  margin: auto 0;
+  transition: color 0.2s ease;
+  font-weight: 700;
+  color: hsla(267, 46%, 80%, 0.7);
+  line-height: 2rem;
+}
