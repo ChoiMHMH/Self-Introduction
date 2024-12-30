@@ -85,6 +85,24 @@
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 살짝 떠 보이는 효과 */
 }
+.tooltip {
+  position: fixed;
+  padding: 8px 12px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  pointer-events: none; /* 마우스 이벤트 방지 */
+  white-space: nowrap;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.image {
+  width: 385px;
+  object-fit: contain;
+  border-radius: 10px;
+}
 
 @keyframes shimmer {
   0% {
@@ -96,6 +114,9 @@
 }
 
 @media (max-width: 880px) {
+  .image {
+    width: 415px;
+  }
   .card {
     right: 0;
     gap: 0;
@@ -140,23 +161,8 @@
   .text_container {
     width: 300px;
   }
-}
-
-.tooltip {
-  position: fixed;
-  padding: 8px 12px;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  pointer-events: none; /* 마우스 이벤트 방지 */
-  white-space: nowrap;
-  z-index: 1000;
-  transform: translate(-50%, -50%);
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
-}
-.image {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
+  .image {
+    height: 100%;
+    width: 285px;
+  }
 }
