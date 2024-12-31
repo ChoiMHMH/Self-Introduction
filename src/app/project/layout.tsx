@@ -1,4 +1,3 @@
-import Header from "@/components/landing/header";
 import Link from "next/link";
 import styles from "./page.module.css";
 
