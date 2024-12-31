@@ -24,3 +24,7 @@
   color: hsla(267, 46%, 80%, 0.7);
   line-height: 2rem;
 }
+
+.header_home_button:hover {
+  color: #0070f3;
+}

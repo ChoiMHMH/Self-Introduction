@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .container {
@@ -42,6 +43,20 @@
 .fade_in {
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
+}
+
+.transparentBackground {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.scrolledBackground {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scrolledColor {
+  color: var(--base-violet-70);
 }
 
 @keyframes fadeIn {

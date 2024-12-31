@@ -7,74 +7,45 @@ function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    setIsScrolled(window.scrollY > 0);
-
-    const handleScroll = () => {
+    const handleScrollEvent = () => {
       setIsScrolled(window.scrollY > 0);
     };
 
-    window.addEventListener("scroll", handleScroll);
-
+    window.addEventListener("scroll", handleScrollEvent);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScrollEvent);
     };
   }, []);
 
   return (
     <div
-      className={`${styles.background}  ${styles.fade_in}`}
-      style={{
-        backgroundColor: isScrolled ? "white" : "transparent",
-
-        boxShadow: isScrolled ? "0 2px 4px rgba(0, 0, 0, 0.1)" : "none",
-      }}
+      className={`${styles.background} ${
+        isScrolled ? styles.scrolledBackground : styles.transparentBackground
+      }`}
     >
-      <div className={`${styles.container} ${styles.fade_in}`}>
+      <div className={styles.container}>
         <button
-          style={{
-            color: isScrolled
-              ? "hsla(267, 77%, 51%, 0.7)"
-              : "hsla(267, 46%, 80%, 0.7)",
-          }}
-          className={styles.header_title}
+          className={`${styles.header_title} ${
+            isScrolled ? styles.scrolledColor : styles.header_title
+          } `}
           onClick={() => handleScroll("home")}
         >
-          Home
+          HOME
         </button>
         <div className={styles.header_navigation_menus}>
-          <button
-            style={{
-              color: isScrolled
-                ? "hsla(267, 77%, 51%, 0.7)"
-                : "hsla(267, 46%, 80%, 0.7)",
-            }}
-            className={styles.header_navigation_button}
-            onClick={() => handleScroll("about_me")}
-          >
-            About Me
-          </button>
-          <button
-            style={{
-              color: isScrolled
-                ? "hsla(267, 77%, 51%, 0.7)"
-                : "hsla(267, 46%, 80%, 0.7)",
-            }}
-            className={styles.header_navigation_button}
-            onClick={() => handleScroll("skills")}
-          >
-            Skills
-          </button>
-          <button
-            style={{
-              color: isScrolled
-                ? "hsla(267, 77%, 51%, 0.7)"
-                : "hsla(267, 46%, 80%, 0.7)",
-            }}
-            className={styles.header_navigation_button}
-            onClick={() => handleScroll("projects")}
-          >
-            Projects
-          </button>
+          {["about_me", "skills", "projects"].map((section) => (
+            <button
+              key={section}
+              className={`${styles.header_navigation_button} ${
+                isScrolled
+                  ? styles.scrolledColor
+                  : styles.header_navigation_button
+              }`}
+              onClick={() => handleScroll(section)}
+            >
+              {section.replace("_", " ").toUpperCase()}
+            </button>
+          ))}
         </div>
       </div>
     </div>
